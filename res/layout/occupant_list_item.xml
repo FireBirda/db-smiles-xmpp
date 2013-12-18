@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2013, Redsolution LTD. All rights reserved.
+
+     This file is part of Xabber project; you can redistribute it and/or
+     modify it under the terms of the GNU General Public License, Version 3.
+
+     Xabber is distributed in the hope that it will be useful, but
+     WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+     See the GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License,
+     along with this program. If not, see http://www.gnu.org/licenses/.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip" >
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/img_default_avatar" />
+
+    <ImageView
+        android:id="@+id/affilation"
+        android:layout_width="2dip"
+        android:layout_height="48dp"
+        android:layout_marginLeft="2dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_affilation"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:ellipsize="marquee"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:ellipsize="marquee"
+            android:gravity="top"
+            android:singleLine="true"
+            android:text="status"
+            android:textColor="?android:attr/textColorSecondary"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

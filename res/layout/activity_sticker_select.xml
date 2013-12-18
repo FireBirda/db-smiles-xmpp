@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stickerSelectRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_top_bg_light" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/StickerShopTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+<FrameLayout
+				    android:id="@+id/StickerSelectBtnClose"
+				    android:layout_width="40dp"
+				    android:layout_height="match_parent"
+				    android:layout_gravity="left"
+				    android:background="@drawable/btn_transparant_endog"
+				    android:clickable="true"
+				    android:padding="15dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_title_left_btn" />
+
+                </FrameLayout>
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="65dp"
+                   android:background="@drawable/title_top_bg_light"
+                   android:orientation="horizontal"
+                   android:padding="10dp" >
+
+                   <FrameLayout
+                       android:id="@+id/StickerSelectBtnSticker"
+                       android:layout_width="match_parent"
+                       android:layout_height="45dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_weight="4"
+                       android:background="@drawable/img_btn_tab_left_select" >
+
+                       <TextView
+                           android:id="@+id/StickerSelectTxtSticker"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="Sticker"
+                           android:textColor="@color/TextPrimaryLight" />
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:id="@+id/StickerSelectBtnIkonia"
+                       android:layout_width="match_parent"
+                       android:layout_height="45dp"
+                       android:layout_gravity="center_vertical"
+                       android:layout_weight="4"
+                       android:background="@drawable/img_btn_tab_right_unselect" >
+
+                       <TextView
+                           android:id="@+id/StickerSelectTxtIkonia"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="Ikonia"
+                           android:textColor="@color/TextPrimaryLight" />
+                   </FrameLayout>
+
+               </LinearLayout>
+
+               <FrameLayout
+                   android:id="@+id/StickerSelectNoItemConteiner"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:visibility="gone" >
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:orientation="vertical" >
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:paddingBottom="10dp"
+                           android:text="Sorry, No Items"
+                           android:textColor="@color/TextTertiaryLight" />
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:src="@drawable/img_sad" />
+                   </LinearLayout>
+                   
+               </FrameLayout>
+
+               <ScrollView
+                   android:id="@+id/StickerSelectScrollStricker"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent" >
+
+                   <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical" >
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="200dp"
+                       android:background="@drawable/shadow_repeat" >
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@color/BiruNdogAsinSelected" >
+
+                           <FrameLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1" >
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical"
+                                   android:padding="15dp" >
+
+                                   <TextView
+                                       android:id="@+id/StickerSelectTxtStickerName"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:shadowColor="@color/Hitam"
+                                       android:shadowDx="1"
+                                       android:shadowDy="1"
+                                       android:shadowRadius="1"
+                                       android:text="Name"
+                                       android:textAppearance="?android:attr/textAppearanceLarge"
+                                       android:textColor="@color/Putih"
+                                       android:textSize="20sp" />
+
+                                   <FrameLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="3dp" >
+                                   </FrameLayout>
+
+                                   <TextView
+                                       android:id="@+id/textView3"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:shadowColor="@color/Hitam"
+                                       android:shadowDx="1"
+                                       android:shadowDy="1"
+                                       android:shadowRadius="1"
+                                       android:text="Price"
+                                       android:textAppearance="?android:attr/textAppearanceLarge"
+                                       android:textColor="@color/AbuStandard"
+                                       android:textSize="18sp" />
+
+                                   <TextView
+                                       android:id="@+id/priceTextView"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:shadowColor="@color/Hitam"
+                                       android:shadowDx="1"
+                                       android:shadowDy="1"
+                                       android:shadowRadius="1"
+                                       android:text="IDR."
+                                       android:textAppearance="?android:attr/textAppearanceLarge"
+                                       android:textColor="@color/barChat"
+                                       android:textSize="18sp" />
+
+                               </LinearLayout>
+                           </FrameLayout>
+
+                           <FrameLayout
+                               android:layout_width="100dp"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1" >
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical" >
+
+                                   <FrameLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:layout_weight="1"
+                                       android:padding="8dp" >
+
+                                       <ImageView
+                                           android:id="@+id/StickerSelectImgDetail"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:layout_weight="1"
+                                           android:src="@drawable/ic_launcher" />
+
+                                       <ProgressBar
+                                           android:id="@+id/StickerSelectProgressDetail"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="center" />
+
+                                   </FrameLayout>
+
+                                   <FrameLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:padding="5dp" >
+
+                                       <FrameLayout
+                                           android:id="@+id/StickerSelectBtndownload"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="center"
+                                           android:background="@drawable/btn_defaultb"
+                                           android:clickable="true"
+                                           android:minWidth="120dp"
+                                           android:padding="10dp" >
+
+                                           <TextView
+                                               android:id="@+id/StickerSelectTxtDownload"
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:layout_gravity="center"
+                                               android:gravity="center"
+                                               android:paddingLeft="10dp"
+                                               android:paddingRight="10dp"
+                                               android:text="DOWNLOAD"
+                                               android:textAppearance="?android:attr/textAppearanceMedium"
+                                               android:textColor="@color/Putih" />
+
+                                       </FrameLayout>
+                                   </FrameLayout>
+                               </LinearLayout>
+                           </FrameLayout>
+                       </LinearLayout>
+                   </FrameLayout>
+
+                   <TextView
+                       android:id="@+id/StickerSelectTxtStickerDesc"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="15dp"
+                       android:text="Large Text"
+                       android:textAppearance="?android:attr/textAppearanceLarge"
+                       android:textColor="@color/TextPrimaryLight"
+                       android:textSize="18sp" />
+				<com.digitalbuana.smiles.ui.widget.GridViewKu
+                  android:id="@+id/StickerSelectGridViewKu"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:clickable="false"
+                  android:numColumns="3"
+                  android:listSelector="@color/Transparan"
+                  >
+              </com.digitalbuana.smiles.ui.widget.GridViewKu>
+               </LinearLayout>
+               </ScrollView>
+
+               <GridView
+                   android:id="@+id/StickerSelectGridView"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:numColumns="3"
+                   android:listSelector="@color/Transparan"
+                   >
+               </GridView>
+               
+           </LinearLayout>
+           
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow_dramatisir" />
+            
+<FrameLayout
+    android:id="@+id/StickerSelectLoading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/img_bg_loading"
+    android:padding="5dp"
+    android:visibility="gone"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/kakatuaKuimgProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/kakatua_junior_anim" />
+
+    <TextView
+        android:id="@+id/kakatuaKutextProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="LOADING"
+        android:textColor="@color/Putih" />
+
+</LinearLayout>
+
+</FrameLayout>
+                                               
+                                               
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kakatua_junior_anim" android:oneshot="false" >
+        <item android:drawable="@drawable/img_kepala_kk" android:duration="1000" />
+        <item android:drawable="@drawable/img_kepala_kk_kedip" android:duration="100" />
+		<item android:drawable="@drawable/img_kepala_kk" android:duration="2000" />
+        <item android:drawable="@drawable/img_kepala_kk_kedip" android:duration="100" />
+        <item android:drawable="@drawable/img_kepala_kk" android:duration="500" />
+        <item android:drawable="@drawable/img_kepala_kk_kedip" android:duration="100" />
+        <item android:drawable="@drawable/img_kepala_kk" android:duration="500" />
+        <item android:drawable="@drawable/img_kepala_kk_kedip" android:duration="100" />
+        <item android:drawable="@drawable/img_kepala_kk" android:duration="3000" />
+        <item android:drawable="@drawable/img_kepala_kk_kedip" android:duration="100" />
+</animation-list> 

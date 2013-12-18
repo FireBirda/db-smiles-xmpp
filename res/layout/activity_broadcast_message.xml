@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/broadcastRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/HitamAlphaHigh"
+    android:padding="3dp" >
+
+<FrameLayout
+    android:id="@+id/broadcastContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_bg_frame_putih"
+                    android:paddingTop="65dp" >
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:text="@string/BroadcastText"
+                                android:textColor="@color/TextSecondaryLight" />
+
+                            <EditText
+                                android:id="@+id/broadcastEditMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext_style"
+                                android:ems="10"
+                                android:imeOptions="actionDone"
+                                android:inputType="textMultiLine" >
+
+                                <requestFocus />
+                            </EditText>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp" >
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:orientation="horizontal" >
+
+                                    <FrameLayout
+                                        android:id="@+id/broadcastBtnSelectAll"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/BiruNdogAsin" >
+
+                                        <TextView
+                                            android:id="@+id/broadcastTxtSelectAll"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:text="All"
+                                            android:textColor="@color/Putih" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:id="@+id/broadcastBtnSelectGroup"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/AbuTuaVeryLow" >
+
+                                        <TextView
+                                            android:id="@+id/broadcastTxtSelectGroup"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:text="Groups"
+                                            android:textColor="@color/TextSecondaryLight" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:id="@+id/broadcastBtnSelectCustom"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/AbuTuaVeryLow" >
+
+                                        <TextView
+                                             android:id="@+id/broadcastTxtSelectCustom"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:text="Custom"
+                                            android:textColor="@color/TextSecondaryLight" />
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <com.digitalbuana.smiles.ui.widget.GridViewKu
+                                android:id="@+id/broadcastGridSelect"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:numColumns="1"
+                                android:visibility="gone"
+                                android:minHeight="50dp"
+                                >
+                            </com.digitalbuana.smiles.ui.widget.GridViewKu>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp" >
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/AbuTuaVeryLow" >
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp" >
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/broadcastBtnSend"
+                                android:layout_width="120dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_defaultb"
+                                android:clickable="true" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/formGlobalSend"
+                                    android:textColor="@color/Putih" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="10dp" >
+                            </FrameLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </FrameLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" >
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp" >
+
+					<FrameLayout
+					    android:layout_width="match_parent"
+					    android:layout_height="50dp"
+					    android:layout_gravity="center"
+					    android:background="@color/BiruNdogAsin" >
+
+						<FrameLayout
+						    android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    >
+
+							<TextView
+							    android:layout_width="match_parent"
+							    android:layout_height="wrap_content"
+							    android:layout_gravity="center_vertical"
+							    android:paddingBottom="4dp"
+							    android:paddingLeft="60dp"
+							    android:paddingRight="60dp"
+							    android:paddingTop="4dp"
+							    android:shadowColor="@color/Hitam"
+							    android:shadowDx="1"
+							    android:shadowDy="1"
+							    android:shadowRadius="1"
+							    android:text="@string/BroadcastTitle"
+							    android:textColor="@color/Putih"
+							    android:textSize="20sp" />
+
+<FrameLayout
+                        android:id="@+id/broadcastBtnClose"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/btn_transparant_endogmed"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close_btn" />
+
+                    </FrameLayout>
+						</FrameLayout>
+
+                </FrameLayout>
+
+					<FrameLayout
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="left|center_vertical"
+					    android:paddingLeft="10dp" >
+
+						<ImageView
+						    android:id="@+id/broadcasImgMulut"
+						    android:layout_width="34dp"
+						    android:layout_height="50dp"
+						    android:background="@drawable/kakatua_kedip_anim" />
+
+					</FrameLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout> 
+</FrameLayout>

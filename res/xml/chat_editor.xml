@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/save_history"
+        android:key="@string/chat_save_history_key"
+        />
+    <com.digitalbuana.smiles.ui.widget.RingtonePreference
+        android:title="@string/events_sound"
+        android:key="@string/chat_events_sound_key"
+        android:ringtoneType="notification"
+        android:showSilent="true" 
+        android:showDefault="true" />
+    <CheckBoxPreference
+        android:title="@string/events_show_text"
+        android:key="@string/chat_events_show_text_key"
+        />
+    <CheckBoxPreference
+        android:title="@string/events_vibro"
+        android:key="@string/chat_events_vibro_key"
+        />
+    <CheckBoxPreference
+        android:title="@string/events_visible_chat"
+        android:key="@string/chat_events_visible_chat_key"
+        />
+</PreferenceScreen>

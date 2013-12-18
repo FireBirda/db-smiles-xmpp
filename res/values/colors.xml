@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2013, Redsolution LTD. All rights reserved.
+
+     This file is part of Xabber project; you can redistribute it and/or
+     modify it under the terms of the GNU General Public License, Version 3.
+
+     Xabber is distributed in the hope that it will be useful, but
+     WITHOUT ANY WARRANTY; without even the implied warranty of
+     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+     See the GNU General Public License for more details.
+
+     You should have received a copy of the GNU General Public License,
+     along with this program. If not, see http://www.gnu.org/licenses/.
+-->
+<resources>
+    <color name="bright_foreground_dark">#ffffffff</color>
+    <color name="bright_foreground_light">#535353</color>
+    
+    <color name="Putih">#ffffff</color>
+    <color name="Hitam">#000000</color>
+    <color name="HitamLow">#adadad</color>
+    <color name="HitamMed">#7c7c7c</color>
+    <color name="HitamHigh">#404040</color>
+    <color name="Transparan">#00000000</color>
+    <color name="BiruNdogAsin">#14c9d9</color>
+    <color name="Pink">#e590c4</color>
+    <color name="PinkTua">#b16192</color>
+    <color name="BiruNdogAsinTuaLow">#11abb9</color>
+    <color name="BiruNdogAsinTuaMed">#0d8a95</color>
+    <color name="BiruNdogAsinTuaHigh">#0a6870</color>
+    <color name="BiruNdogAsinSelected">#5014c9d9</color>
+    <color name="AbuStandard">#e9e9e9</color>
+    <color name="AbuStandardLow">#f3f3f3</color>
+    <color name="AbuTuaHigh">#303030</color>
+    <color name="AbuTuaMedium">#7b7b7b</color>
+    <color name="AbuTuaLow">#b9b9b9</color>
+    <color name="AbuTuaVeryLow">#e1e1e1</color>
+    <!-- <color name="barChat">#f0d150</color> -->
+    <color name="barChat">#f6e6a4</color>
+    <!-- <color name="barGrup">#ea7d60</color> -->
+    <color name="barGrup">#ecb0a0</color>
+    <!-- <color name="barRoom">#0ac6b2</color> -->
+    <color name="barRoom">#8fd2cb</color>
+    <!-- <color name="barFriends">#14c9d9</color> -->
+    <color name="barFriends">#98dce2</color>
+   <!--  <color name="barOther">#7c7c7c</color> -->
+    <color name="barOther">#d1d1d1</color>
+    <color name="HitamAlphaLow">#20000000</color>
+    <color name="HitamAlphaMed">#50000000</color>
+    <color name="HitamAlphaHigh">#99000000</color>
+     <color name="MerahTua">#ac0101</color>
+    
+    <color name="TextPrimaryLight">#353535</color>
+    <color name="TextSecondaryLight">#767676</color>
+    <color name="TextTertiaryLight">#9c9c9c</color>
+    <color name="chatTimeColor">#588c9c</color>
+</resources>

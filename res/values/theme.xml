@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<style name="Theme.Dark" parent="@android:style/Theme.Black.NoTitleBar">
+        
+    </style>
+    
+    <style name="Theme.Light" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColorPrimary">@color/TextPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/TextSecondaryLight</item>
+        <item name="android:textColorTertiary">@color/TextTertiaryLight</item>
+    </style>
+    <style name="Theme.LightColorfull" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:textColorPrimary">@color/TextPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/TextSecondaryLight</item>
+        <item name="android:textColorTertiary">@color/TextTertiaryLight</item>
+    </style>
+    
+</resources>

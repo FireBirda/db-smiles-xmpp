@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatViewRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <RelativeLayout
+                android:id="@+id/title_color"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical" >
+
+                <FrameLayout
+                    android:id="@+id/chatActivityBtnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/btn_transparant_endog"
+                    android:clickable="true"
+                    android:padding="15dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_title_left_btn" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/chatActivityBtnMenu"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_transparant_endog"
+                    android:clickable="true"
+                    android:padding="15dp"
+				 >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/btn_title_menu" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/chatActivityBtnViewProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBaseline="@+id/chatActivityBtnBack"
+                    android:layout_toLeftOf="@+id/chatActivityBtnMenu"
+                    android:layout_toRightOf="@+id/chatActivityBtnBack" >
+
+                    <ImageView
+                        android:id="@+id/chatActivityAvatar"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_default_avatar" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="6dip" >
+
+                        <TextView
+                            android:id="@+id/chatActivityTxtName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="marquee"
+                            android:gravity="bottom"
+                            android:singleLine="true"
+                            android:text="name"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/chatActivityTxtStatus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="marquee"
+                            android:gravity="top"
+                            android:singleLine="true"
+                            android:text="status"
+                            android:textColor="?android:attr/textColorPrimary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_bg_chat_biru_gradient" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shadow_dramatisir" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/img_bg_chat_map" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow_repeat_white" >
+
+            </FrameLayout>
+
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/chatActivityListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:background="@color/Transparan"
+                    android:cacheColorHint="@color/Transparan"
+                    android:divider="@drawable/kosong"
+                    android:dividerHeight="0dp"
+                    android:stackFromBottom="true"
+                    android:transcriptMode="normal"
+                    android:fadingEdge="none"                    
+                    android:fastScrollEnabled="true"
+                    android:textFilterEnabled="true"
+                    android:listSelector="@color/Transparan"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/AbuTuaHigh"
+                    android:orientation="horizontal"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="4dp" >
+
+                    <FrameLayout
+                        android:id="@+id/chatActivityBtnShowSticker"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_transparant_endog"
+                        android:clickable="true"
+                        android:padding="10dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_ic_chat_emo" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" >
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/chatActivityEditMessage"
+                        android:layout_width="0dip"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:cursorVisible="true"
+					    android:imeOptions="actionSend"
+					    android:inputType="textMultiLine"
+					    android:maxLines="5"
+					    android:singleLine="false" />
+
+                    <FrameLayout
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent" >
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/chatActivityBtnSend"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_transparant_endog"
+                        android:clickable="true"
+                        android:padding="10dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_ic_chat_send" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/chatViewContainerSticker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/AbuStandard" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/chatViewPagerSticker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" >
+                        </android.support.v4.view.ViewPager>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/AbuTuaVeryLow" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal" >
+
+                                <FrameLayout
+                                    android:id="@+id/chatViewBtnAttachemt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/BiruNdogAsin" >
+
+                                    <TextView
+                                        android:id="@+id/chatViewTxtAtachment"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="10dp"
+                                        android:text="Attachments"
+                                        android:textColor="@color/Putih" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/chatViewBtnEmotion"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/AbuTuaVeryLow" >
+
+                                    <TextView
+                                        android:id="@+id/chatViewTxtEmotion"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:text="Emoticons"
+                                        android:textColor="@color/TextSecondaryLight" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/chatViewBtnSticker"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/AbuTuaVeryLow" >
+
+                                    <TextView
+                                        android:id="@+id/chatViewTxtSticker"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:text="Sticker"
+                                        android:textColor="@color/TextSecondaryLight" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/chatViewBtnIkonia"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/AbuTuaVeryLow" >
+
+                                    <TextView
+                                        android:id="@+id/chatViewTxtIkonia"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:paddingLeft="15dp"
+                                        android:paddingRight="15dp"
+                                        android:text="Ikonia"
+                                        android:textColor="@color/TextSecondaryLight" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/AbuTuaVeryLow" >
+
+                                    <FrameLayout
+                                        android:id="@+id/chatViewBtnAddSticker"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/btn_transparant_endog"
+                                        android:clickable="true" >
+
+                                        <TextView
+                                            android:id="@+id/chatViewTxtAddSticker"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:paddingLeft="15dp"
+                                            android:paddingRight="15dp"
+                                            android:text="Add Sticker"
+                                            android:textColor="@color/TextSecondaryLight" />
+                                    </FrameLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/chatActivityPopContainer"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="top|right"
+                android:background="@drawable/img_bg_popup"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/chatActivityPopList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@color/Transparan"
+                    >
+                </ListView>
+
+            </FrameLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

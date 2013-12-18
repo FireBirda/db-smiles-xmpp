@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/visitorsRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/VisitorTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+<FrameLayout
+				    android:id="@+id/visitorsBtnBack"
+				    android:layout_width="40dp"
+				    android:layout_height="match_parent"
+				    android:layout_gravity="left"
+				    android:background="@drawable/btn_transparant_endog"
+				    android:clickable="true"
+				    android:padding="15dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_title_left_btn" />
+
+                </FrameLayout>
+
+<ProgressBar
+    android:id="@+id/progressBar1"
+    style="?android:attr/progressBarStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    android:layout_marginRight="8dp"
+    android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard"
+           >
+
+           <ScrollView
+               android:id="@+id/visitorsScrollView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="top|center_horizontal"
+               android:fillViewport="true"
+               android:overScrollMode="never"
+               android:scrollbars="none|vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="8dp" >
+
+                   <com.digitalbuana.smiles.ui.widget.GridViewKu
+                       android:id="@+id/visitorsGridVisitor"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:numColumns="1"
+                       android:listSelector="@color/Transparan"
+                       >
+                   </com.digitalbuana.smiles.ui.widget.GridViewKu>
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:visibility="gone"
+                       android:padding="15dp"
+                       >
+                       <FrameLayout
+                           android:id="@+id/VIsitorBtnClear"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:minWidth="120dp"
+                           android:layout_gravity="center"
+                           android:background="@drawable/btn_defaultb"
+                           android:padding="5dp"
+                           >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:text="@string/formGlobalClear"
+                               android:textSize="18sp"
+                               android:textColor="@color/Putih" />
+
+                       </FrameLayout>
+
+                   </FrameLayout>
+
+               </LinearLayout>
+
+           </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/VisitorPopConteiner"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_gravity="bottom"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_bg_loading"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+
+                       <FrameLayout
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:visibility="gone"
+                           android:padding="5dp" >
+
+                       <FrameLayout
+                           android:id="@+id/VisitorPopBtnClear"
+                           android:layout_width="wrap_content"
+                           android:layout_height="42dp"
+                           android:layout_gravity="center"
+                           android:background="@drawable/btn_defaultb"
+                           android:minWidth="120dp"
+                           android:padding="3dp" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:text="@string/formGlobalClear"
+                               android:textColor="@color/Putih"
+                               android:textSize="16sp" />
+
+                       </FrameLayout>
+
+                   </FrameLayout>
+
+                   <FrameLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="5dp" >
+
+                       <FrameLayout
+                           android:id="@+id/VisitorPopBtnCancel"
+                           android:layout_width="wrap_content"
+                           android:layout_height="42dp"
+                           android:layout_gravity="center"
+                           android:background="@drawable/btn_defaulta"
+                           android:minWidth="120dp"
+                           android:padding="3dp" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:text="@string/formGlobalOk"
+                               android:textColor="@color/Putih"
+                               android:textSize="16sp" />
+
+                       </FrameLayout>
+
+                   </FrameLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" >
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/VisitorPopFrameGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/AbuTuaMedium"
+                        android:padding="5dp" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="2dp" >
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_bg_art" />
+
+                            <LinearLayout
+                                android:id="@+id/VisitorPopBtnViewProfile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_transparant_endog"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="5dp" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center" >
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/img_bg_frame_putih" >
+
+                                        <ImageView
+                                            android:id="@+id/VisitorPopAvatar"
+                                            android:layout_width="48dp"
+                                            android:layout_height="48dp"
+                                            android:src="@drawable/img_default_avatar" />
+
+                                    </FrameLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="5dp" >
+
+                                        <TextView
+                                            android:id="@+id/VisitorPopTxtname"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:shadowColor="@color/Hitam"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="1"
+                                            android:text="Username"
+                                            android:textColor="@color/Putih"
+                                            android:textSize="18sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/VisitorPopTxtTime"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:shadowColor="@color/Hitam"
+                                            android:shadowDx="1"
+                                            android:shadowDy="1"
+                                            android:shadowRadius="1"
+                                            android:text="Time"
+                                            android:textColor="@color/Putih"
+                                            android:textSize="16sp" />
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/VisitorPopTxtDistance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:padding="2dp"
+                                    android:shadowColor="@color/Hitam"
+                                    android:shadowDx="1"
+                                    android:shadowDy="1"
+                                    android:shadowRadius="1"
+                                    android:text="0 M"
+                                    android:textColor="@color/Putih"
+                                    android:textSize="18dp"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/AbuTuaHigh" >
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shadow_dramatisir" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

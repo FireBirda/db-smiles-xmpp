@@ -1,0 +1,135 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Smiles</string>
+
+    <string name="txtConnectionFailed">Connection Failed</string>
+    
+    <string name="formGlobalNext">NEXT</string>
+    <string name="formGlobalSend">SEND</string>
+    <string name="formGlobalDone">DONE</string>
+    <string name="formGlobalResend">RESEND</string>
+    <string name="formGlobalConfirm">CONFIRM</string>
+    <string name="formGlobalCreate">CREATE</string>
+    <string name="formGlobalOk">OK</string>
+    <string name="formGlobalNo">NO</string>
+    <string name="formGlobalAdd">ADD</string>
+    <string name="formGlobalApprove">APPROVE</string>
+    <string name="formGlobalCancel">CANCEL</string>
+    <string name="formGlobalSave">SAVE</string>
+    <string name="formGlobalLogin">LOGIN</string>
+    <string name="formGlobalForgetPassword">FORGOT PASSWORD ?</string>
+    <string name="formGlobalLoginHint">Email/ Smiles ID/ Phone</string>
+    <string name="formGlobalEmailHint">Email Address</string>
+    <string name="formGlobalFullNameHint">Full Name</string>
+    <string name="formGlobalSmilesIDHint">Smiles ID</string>
+    <string name="formGlobalPasswordHint">Password</string>
+    <string name="formGlobalConfirmPasswordHint">Confirm Password</string>
+    <string name="formGlobalCountryCodeHint">+62</string>
+    <string name="formGlobalCountryCode">Country Code</string>
+    <string name="formGlobalPhoneNumberHint">Phone Number, eg:8129444...</string>
+    <string name="formGlobalDisplayNameHint">Display Name</string>
+    <string name="formGlobalDisplayStatusHint">Display Status</string>
+    <string name="formGlobalGenderHint">Gender</string>
+    <string name="formGlobalCaptureFrom">PHOTO FROM</string>
+    <string name="formGlobalCamera">CAMERA</string>
+    <string name="formGlobalGallery">GALLERY</string>
+    <string name="formGlobalClear">CLEAR</string>
+    <string name="FormGlobalSorryNoItem">Sorry, No Items</string>
+    <string name="FormGlobalAddAsFriend">Add Friend</string>
+    <string name="FormGlobalRemoveFriends">Remove Friend</string>
+    <string name="FormGlobalBlockFriend">Block Friend</string>
+    <string name="FormGlobalUnBlockFriend">UnBlock Friend</string>
+    <string name="FormGlobalChat">Chat</string>
+    <string name="FormGlobalSendAttention">Send Attention</string>
+    <string name="FormGlobalUserPhoto">User Photos</string>
+    <string name="FormGlobalUserAddPhoto">Add Photos</string>
+    
+     <string name="formGlobalShowHidePassword">Password Visibility</string>
+    
+    <string name="stringFailedLogin">LOGIN FAILED</string>
+    <string name="stringFailedID">PLEASE INPUT CORRECT ID</string>
+    <string name="stringFailedPassword">PLEASE INPUT CORRECT PASSWORD</string>
+    
+    <string name="formLoginTitle">Smiles User Login</string>
+    
+    <string name="formRegisterTitle">Smiles ID Registration</string>
+    <string name="formRegisterPleaseComplete">Please Complete the Following Registration</string>
+    
+    <string name="formRegisterbtnShowTermsPrivacy">Show Terms and Privacy</string>
+    <string name="formRegisterShowTermsPrivacy">Terms and Privacy</string>
+    <string name="formRegisterTxtAgree">I Have Read and Agree</string>
+    <string name="formRegisterVerificationCodeTitle">Verification Code</string>
+    <string name="formRegisterVerificationCodeHelp">We will send the Verification Code to your Phone Number. \n It may take a while to Receive the Verification Code depending the network status of your mobile operator</string>
+    <string name="formRegisterTerms">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+    <string name="formRegisterPrivacy">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+    
+    <string name="formProfileTitle">Profile Settings</string>
+
+    <string name="formAccountTitle">Account Settings</string>
+    
+    <string name="BroadcastTitle">Broadcast Message</string>
+	<string name="BroadcastText">Message :</string>
+	
+	<string name="addFriendsTitle1">Add Friends</string>
+	<string name="addFriendsTitle2">Search Friends</string>
+	<string name="addFriendsItem1">Invite to Contact</string>
+	<string name="addFriendsItem2">Invite to Email</string>
+	<string name="addFriendsItem3">Invite to Facebook</string>
+	<string name="addFriendsItem4">Search Friends</string>
+	
+	<string name="CreateGroupTitle">Create Group</string>
+	<string name="CreateGroupNameHint">Group Name</string>
+	<string name="CreateGroupSearchFriendsHint">Search Friends</string>
+	
+	<string name="FriendsRequestTitle">Friends Request</string>
+	<string name="PenddingRequestTitle">Pending Request</string>
+	
+	<string name="BlockedFriendsTitle">Blocked Friends</string>
+	
+	<string name="FriendsUpdateTitle">Friends Update</string>
+	<string name="friends_update">Update Profile</string>
+	
+	<string name="VisitorTitle">Visitors</string>
+	<string name="visitor_view">View Your Profile</string>
+	
+	<string name="NotificationTitle">Notification</string>
+	
+	<string name="RoomsTitle">Join Rooms</string>
+	
+	<string name="SettingsTitle">Settings</string>
+	
+	<string name="StickerShopTitle">Sticker and Ikonia Shop</string>
+	
+
+	<string name="ProfileDetailTitle">\'s Profile</string>
+	<string name="UploadFailedTitle">Upload Failed</string>
+    <string name="failed_to_get_contact_list">Failed to get contact list</string>
+    <item name="detailTag" type="id"/>
+    <string name="play_url">https://play.google.com/store/apps/details?id=</string>
+    <string name="error_charge">System can\'t proses at this time, try again later.</string>
+    <string name="contact_generated_desclaimer">Please wait, your contact being generated...</string>
+    <string name="smiles_multimedia_title">Smiles Multimedia</string>
+    <string name="no_contact_selected">There is no contact selected</string>
+    <string name="mail_invite_subject">Smiles Apps Invitation</string>
+    <string name="username_empty_disclaimer">Please input your Username</string>
+    <string name="current_password_title">Current Password</string>
+    <string name="new_password_title">New Password</string>
+    <string name="new_password_conf_title">New Password Confirm</string>
+    <string name="fill_all_data_disclaimer">Please fill all required text</string>
+    <string name="change_password">Change Password</string>
+    
+    <string name="admob_key">admob</string>
+    <string name="smaato_key">smaato</string>
+    <string name="adplus_key">adplus</string>
+    
+    <string name="space_on_diclaimer">space charater is not allowed</string>
+    
+    <string name="custome_sound">Custom Sound</string>
+    
+    <string name="setting_sound_attention">Attention</string>
+    <string name="setting_sound_chat_notif">Chat Notification</string>
+    <string name="setting_sound_chat_send">Chat Send</string>
+    
+    <string name="profile_sound_list">Sound List</string>
+    
+</resources>

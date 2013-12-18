@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Transparan"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp" >
+
+    <LinearLayout
+        android:id="@+id/rootMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+         <FrameLayout
+                    android:id="@+id/messageLeftTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@color/HitamAlphaHigh"
+                        android:padding="3dp" >
+
+                        <TextView
+                            android:id="@+id/timeLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:text="00:00 PM"
+                            android:textColor="@color/Putih"
+                            android:textSize="8sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/stickerContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_launcher"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/messageContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_bg_chat_other" >
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="4dip" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/messageRightTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:visibility="visible" >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:background="@color/HitamAlphaHigh"
+                        android:padding="3dp" >
+
+                        <TextView
+                            android:id="@+id/timeRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:text="00:00 PM"
+                            android:textColor="@color/Putih"
+                            android:textSize="8sp"
+                            />
+
+                    </FrameLayout>
+                </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

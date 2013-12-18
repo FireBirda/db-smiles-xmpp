@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/friendsRequestRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/FriendsRequestTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+<FrameLayout
+				    android:id="@+id/friendsRequestBtnBack"
+				    android:layout_width="40dp"
+				    android:layout_height="match_parent"
+				    android:layout_gravity="left"
+				    android:background="@drawable/btn_transparant_endog"
+				    android:clickable="true"
+				    android:padding="15dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_title_left_btn" />
+
+                </FrameLayout>
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard" >
+
+           <ScrollView
+               android:id="@+id/friendsRequestScrollView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="top|center_horizontal"
+               android:fillViewport="true"
+               android:overScrollMode="never"
+               android:scrollbars="none|vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="8dp" >
+
+                   <TextView
+                       android:id="@+id/chatDateGroupSeparator"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/AbuTuaVeryLow"
+                       android:gravity="center"
+                       android:minHeight="40dp"
+                       android:text="@string/FriendsRequestTitle"
+                       android:textColor="@color/TextPrimaryLight" />
+
+                   <com.digitalbuana.smiles.ui.widget.GridViewKu
+                       android:id="@+id/friendsRequestGridViewKu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/Putih"
+                       android:numColumns="1" >
+
+                   </com.digitalbuana.smiles.ui.widget.GridViewKu>
+
+					<TextView
+					    android:id="@+id/chatDateGroupSeparator"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@color/AbuTuaVeryLow"
+					    android:gravity="center"
+					    android:minHeight="40dp"
+					    android:text="@string/PenddingRequestTitle"
+					    android:textColor="@color/TextPrimaryLight" />
+				<com.digitalbuana.smiles.ui.widget.GridViewKu
+                       android:id="@+id/penddingRequestGridViewKu"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/Putih"
+                       android:numColumns="1" >
+
+                   </com.digitalbuana.smiles.ui.widget.GridViewKu>
+               </LinearLayout>
+
+           </ScrollView>
+
+           
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow_dramatisir" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

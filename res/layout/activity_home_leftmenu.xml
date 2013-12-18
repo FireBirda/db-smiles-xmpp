@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AbuTuaHigh" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/AbuStandard" >
+
+            <LinearLayout
+                android:id="@+id/homeLeftMenuTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_biru_transparant"
+                android:clickable="true"
+                android:padding="1dp" >
+
+                <ImageView
+                    android:id="@+id/homeLeftMenuAvatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/img_default_avatar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+
+                    <TextView
+                        android:id="@+id/homeLeftMenuTitleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Nama"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/Putih"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/homeLeftMenuTitleStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Status"
+                        android:textColor="@color/Putih" />
+                </LinearLayout>
+                <FrameLayout
+				    android:id="@+id/pitaKananImageView"
+				    android:layout_width="40dp"
+				    android:layout_height="match_parent"
+				    android:layout_gravity="left"
+				    android:background="@drawable/btn_transparant_endog"
+				    android:clickable="true"
+				    android:padding="15dp" >
+	
+	                   <ImageView
+	                       android:layout_width="match_parent"
+	                       android:layout_height="match_parent"
+	                       android:layout_gravity="center"
+	                       android:scaleType="fitXY"
+	                       android:src="@drawable/img_title_right_btn" />
+               </FrameLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/homeLeftMenuList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/AbuTuaHigh"
+                android:cacheColorHint="@color/AbuTuaHigh"
+                android:fadingEdge="none"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:dividerHeight="0dp"
+                android:divider="@drawable/kosong"
+                android:overScrollMode="never"
+                android:listSelector="@color/Transparan"
+                >
+
+            </ListView>
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shadow_dramatisir_endog" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@drawable/shadow_left_menu" >
+
+    </FrameLayout>
+
+</FrameLayout>

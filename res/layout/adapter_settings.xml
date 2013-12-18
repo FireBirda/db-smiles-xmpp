@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapterLeftMenuRoot"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/expander_background_light" >
+
+    <FrameLayout
+        android:id="@+id/adapterLeftMenuBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_transparant_endog"
+        android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/adapterLeftMenuText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="5dp"
+        android:text="Menu Title"
+        android:textColor="@color/bright_foreground_light"
+        android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/adapterLeftMenuSelected"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:background="@color/BiruNdogAsin"
+        android:minHeight="30dp" >
+
+    </FrameLayout>
+
+</FrameLayout>

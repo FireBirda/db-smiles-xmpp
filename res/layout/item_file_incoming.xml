@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemMessageRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:background="@color/Transparan"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/itemMessageMiddleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/img_bg_chat_other" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/itemMessageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="4dip"
+                    android:text="sadas"
+                    android:textColor="@color/HitamAlphaHigh" />
+
+               <FrameLayout
+                     android:id="@+id/itemMessageBtnOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_transparant_endogmed"
+                    android:padding="2dp" >
+
+                    <ImageView
+                        android:id="@+id/itemMessageImage"
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_logo_smiles_kt" />
+
+                    <ImageView
+                        android:id="@+id/itemMessageVideoIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/btn_play"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/itemMessageProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/itemMessageTimeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible" >
+
+            <FrameLayout
+                android:id="@+id/msgTimeContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/chatTimeColor"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/itemMessageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="00:00 PM"
+                    android:textColor="@color/Putih"
+                    android:textSize="8sp" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

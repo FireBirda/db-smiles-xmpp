@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogConfirmRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minWidth="300dp" >
+
+            <LinearLayout
+                android:id="@+id/dialogConfirmTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_bg_frame_putih"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@color/BiruNdogAsin" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="60dp"
+                            android:paddingRight="60dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:id="@+id/dialogConfirmTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:shadowColor="@color/Hitam"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="1"
+                                android:text="Title"
+                                android:textColor="@color/Putih"
+                                android:textSize="17sp" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/dialogConfirmBtnClose"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:background="@drawable/btn_transparant_endogmed"
+                            android:clickable="true"
+                            android:padding="8dp" >
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_close_btn" />
+                        </FrameLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:paddingLeft="10dp" >
+
+                        <ImageView
+                            android:id="@+id/dialogConfirmAnim"
+                            android:layout_width="34dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/kakatua_kedip_anim" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                             android:id="@+id/dialogConfirmMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:textSize="15sp"
+                            android:text="Message" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" >
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" >
+
+                                <FrameLayout
+                                    android:id="@+id/dialogConfirmBtnOK"
+                                    android:layout_width="120dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/btn_defaultb"
+                                    android:clickable="true" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/formGlobalOk"
+                                        android:textColor="@color/Putih" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="10dp"
+                                    android:layout_height="match_parent" >
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/dialogConfirmBtnCancel"
+                                    android:layout_width="120dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/btn_defaulta"
+                                    android:clickable="true" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/formGlobalCancel"
+                                        android:textColor="@color/Putih" />
+                                </FrameLayout>
+                            </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" >
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+</FrameLayout>

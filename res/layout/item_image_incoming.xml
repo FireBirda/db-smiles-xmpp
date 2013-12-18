@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemMessageRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:background="@color/Transparan"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/itemMessageMiddleContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/itemMessageImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/itemMessageTimeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible" >
+
+            <FrameLayout
+                android:id="@+id/msgTimeContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/chatTimeColor"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/itemMessageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    
+                    android:text="00:00 PM"
+                    android:textColor="@color/Putih"
+                    android:textSize="8sp" />
+
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
