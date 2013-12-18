@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemMessageRootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:background="@color/Transparan"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:visibility="visible" >
+
+            <FrameLayout
+                android:id="@+id/msgTimeContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/chatTimeColor"
+                android:padding="3dp" >
+
+                <TextView
+                    android:id="@+id/itemMessageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="00:00 PM"
+                    android:textColor="@color/Putih"
+                    android:textSize="8sp" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/itemMessageBallon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_bg_chat_me" >
+
+            <TextView
+                android:id="@+id/itemMessageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dip"
+                android:autoLink="all"
+                android:textColor="#000000" >                
+            </TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>

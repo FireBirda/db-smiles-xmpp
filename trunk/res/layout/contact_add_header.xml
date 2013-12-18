@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+>
+
+<!--     <com.digitalbuana.smiles.ui.widget.NoDefaultSpinner
+        android:id="@+id/contact_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/choose_account"
+        /> -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BiruNdogAsin"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Friends Request"
+        android:textColor="@color/Putih"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/img_kakatua_friends_req" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp" >
+    </FrameLayout>
+
+    <TextView
+        android:text="@string/contact_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:text=""
+        android:id="@+id/contact_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="user@domain.name"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:text="@string/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:text=""
+        android:id="@+id/contact_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <Button
+            android:text="@string/contact_add"
+            android:id="@+id/ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/contact_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

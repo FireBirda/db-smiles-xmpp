@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapterCheckedFriendsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/adapterCheckedFriendsAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical"
+            android:src="@drawable/img_default_avatar" />
+
+        <TextView
+            android:id="@+id/adapterCheckedFriendsName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/adapterCheckedFriendsAvatar"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/adapterCheckedFriendsCheck"
+            android:layout_toRightOf="@+id/adapterCheckedFriendsAvatar"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/TextPrimaryLight"
+            android:textSize="20sp"
+            android:maxLines="1"
+            />
+
+        <CheckBox
+            android:id="@+id/adapterCheckedFriendsCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/adapterCheckedFriendsAvatar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_weight="1"
+            android:button="@drawable/chkbox_smiles"
+            android:checked="false"
+            android:gravity="right|center_vertical" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/AbuTuaVeryLow" >
+    </FrameLayout>
+
+</LinearLayout>

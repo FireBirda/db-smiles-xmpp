@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/formAccountTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard" >
+
+           <ScrollView
+               android:id="@+id/loginScrollView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:fillViewport="true"
+               android:overScrollMode="never"
+               android:scrollbars="none|vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                   android:orientation="vertical"
+                   android:padding="5dp" >
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:background="@drawable/img_bg_frame_putih"
+                       android:orientation="vertical" >
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:paddingTop="25dp" >
+
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingBottom="5dp"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:paddingTop="5dp" >
+
+                           <EditText
+                               android:id="@+id/loginEditPassword"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:ems="10"
+                               android:hint="@string/formGlobalSmilesIDHint"
+                               android:inputType="textPersonName" />
+
+                       </FrameLayout>
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingBottom="5dp"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:paddingTop="5dp" >
+
+                           <EditText
+                               android:id="@+id/loginEditPassword"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:ems="10"
+                               android:hint="@string/formGlobalEmailHint"
+                               android:inputType="textMultiLine" />
+
+                       </FrameLayout>
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingBottom="5dp"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:paddingTop="5dp" >
+
+                           <EditText
+                               android:id="@+id/loginEditPassword"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:ems="10"
+                               android:hint="@string/formGlobalPasswordHint"
+                               android:inputType="textMultiLine" />
+
+                       </FrameLayout>
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingBottom="5dp"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:paddingTop="5dp" >
+
+                           <EditText
+                               android:id="@+id/loginEditPassword"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center"
+                               android:ems="10"
+                               android:hint="@string/formGlobalConfirmPasswordHint"
+                               android:inputType="textMultiLine" />
+
+                       </FrameLayout>
+						<FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="5dp"
+                        >
+
+                       </FrameLayout>
+
+                       <TextView
+                           android:id="@+id/loginWarningMessage"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:paddingLeft="20dp"
+                           android:paddingRight="20dp"
+                           android:text=""
+                           android:textAppearance="?android:attr/textAppearanceLarge"
+                           android:textColor="@color/MerahTua"
+                           android:textSize="12sp" />
+
+<FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="5dp"
+                        >
+
+                       </FrameLayout>
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="2dp"
+                           android:background="@color/AbuTuaVeryLow" >
+
+                       </FrameLayout>
+                       
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="10dp"
+                        >
+
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:paddingBottom="20dp" >
+
+                           <FrameLayout
+                               android:id="@+id/loginBtnLogin"
+                               android:layout_width="120dp"
+                               android:layout_height="35dp"
+                               android:layout_gravity="center"
+                               android:background="@drawable/btn_defaultb"
+                               android:clickable="true" >
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:text="@string/formGlobalSave"
+                                   android:textColor="@color/Putih" />
+                           </FrameLayout>
+
+                       </FrameLayout>
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </ScrollView>
+
+           
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow_dramatisir" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

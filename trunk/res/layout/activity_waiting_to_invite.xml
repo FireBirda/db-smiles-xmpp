@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/inviteParentView" >
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+            
+        	<FrameLayout
+			    android:id="@+id/inviteButtonDone"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_gravity="right"
+			    android:background="@drawable/btn_transparant_endog"
+			    android:clickable="true"
+			    android:padding="15dp" >
+
+				<TextView
+				    android:id="@+id/doneTextButton"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="done"
+				    android:textColor="@color/MerahTua" />
+
+               </FrameLayout>
+
+            <TextView
+                android:id="@+id/inviteHeaderTItle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Invite"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+				
+			<FrameLayout
+			    android:id="@+id/inviteBtnBack"
+			    android:layout_width="40dp"
+			    android:layout_height="match_parent"
+			    android:layout_gravity="left"
+			    android:background="@drawable/btn_transparant_endog"
+			    android:clickable="true"
+			    android:padding="15dp" >
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_gravity="center"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/img_title_left_btn" />
+
+               </FrameLayout>
+
+        </FrameLayout>
+    <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="10dp"
+       android:scaleType="fitXY"
+       android:src="@drawable/img_shadow_dramatisir" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+			
+        <EditText
+	        android:id="@+id/friendToInviteEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:layout_weight="1"
+	        android:ems="10" >
+	        <requestFocus />
+	    </EditText>
+
+	    <ImageButton
+	        android:id="@+id/goSearchButton"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_alignRight="@+id/friendToInviteEditText"
+	        android:layout_alignTop="@+id/friendToInviteEditText"
+	        android:layout_marginRight="2dp"
+	        android:layout_marginTop="2dp"
+	        android:src="@drawable/searchm"
+	        android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chatDateGroupSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Type your friend&apos;s name (or ID or email)"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ListView
+        android:id="@+id/friendToInviteList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp" >
+
+    </ListView>
+
+</LinearLayout>

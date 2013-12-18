@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/blockedFriendsRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/BlockedFriendsTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+<FrameLayout
+				    android:id="@+id/blockedFriendsBtnBack"
+				    android:layout_width="40dp"
+				    android:layout_height="match_parent"
+				    android:layout_gravity="left"
+				    android:background="@drawable/btn_transparant_endog"
+				    android:clickable="true"
+				    android:padding="15dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_title_left_btn" />
+
+                </FrameLayout>
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard" >
+           
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow_dramatisir" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="60dp"
+                                   android:padding="5dp"
+                                   >
+
+                                   <FrameLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="left|center_vertical"
+                                       android:paddingRight="70dp" >
+
+                                       <EditText
+                                           android:id="@+id/blockedFriendsEditName"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="left|center_vertical"
+                                           android:background="@drawable/edittext_style"
+                                           android:hint="@string/formGlobalLoginHint"
+                                           android:imeOptions="actionSearch"
+                                           android:inputType="textEmailAddress"
+                                           android:maxLines="1"
+                                           />
+
+                                   </FrameLayout>
+
+                                   <FrameLayout
+                                       android:layout_width="70dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="right|center_vertical"
+                                       android:padding="5dp" >
+
+                                       <FrameLayout
+                                           android:id="@+id/blockedFriendsBtnAdd"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:background="@drawable/btn_defaultb"
+                                           android:clickable="true" >
+
+                                           <TextView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:layout_gravity="center"
+                                               android:text="@string/formGlobalAdd"
+                                               android:textColor="@color/Putih"
+                                               android:textSize="18sp" />
+
+                                       </FrameLayout>
+
+                                   </FrameLayout>
+
+                               </FrameLayout>
+
+                <com.digitalbuana.smiles.ui.widget.GridViewKu
+                    android:id="@+id/blockedFriendsGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="1" >
+                </com.digitalbuana.smiles.ui.widget.GridViewKu>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

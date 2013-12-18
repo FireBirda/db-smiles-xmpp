@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView        
+        android:id="@+id/imageView1"
+        android:layout_width="48dp"
+    	android:layout_height="48dp"
+    	android:layout_gravity="center"
+        android:src="@drawable/ic_launcher"
+        android:padding="2dp" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical">
+
+	    <TextView
+	        android:id="@+id/lblListItem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        android:shadowColor="#FFFFFF"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:text="username"
+	        android:shadowRadius="2"
+	        android:textColor="#000000"
+	        android:textSize="15sp"
+	        android:textStyle="bold" />
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+
+			<ImageView
+			    android:id="@+id/chatStatusImageView"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:src="@drawable/ic_message_not_sent" />
+
+		    <TextView
+		        android:id="@+id/statusTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingRight="4dp"
+		        android:text="status"
+		        android:textColor="#000000"
+		        android:textSize="12sp" />
+		</LinearLayout>
+	    
+	</LinearLayout>    
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:orientation="vertical"
+	    android:padding="4dp" >
+
+        <TextView
+            android:id="@+id/unredCounterTextView" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/notif_unread"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/Hitam"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/datestext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="time"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/AbuTuaMedium"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</LinearLayout>

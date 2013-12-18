@@ -1,0 +1,106 @@
+/**
+ * Copyright (c) 2013, Redsolution LTD. All rights reserved.
+ * 
+ * This file is part of Xabber project; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License, Version 3.
+ * 
+ * Xabber is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * See the GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License,
+ * along with this program. If not, see http://www.gnu.org/licenses/.
+ */
+package com.digitalbuana.smiles.ui.adapter;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import android.app.Activity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.digitalbuana.smiles.R;
+import com.digitalbuana.smiles.data.SettingsManager;
+import com.digitalbuana.smiles.data.account.AccountManager;
+import com.digitalbuana.smiles.data.account.StatusMode;
+import com.digitalbuana.smiles.data.extension.avatar.AvatarManager;
+import com.digitalbuana.smiles.data.roster.RosterManager;
+
+public class AccountToggleAdapter implements UpdatableAdapter {
+
+	private final Activity activity;
+	private final LinearLayout linearLayout;
+
+	private final ArrayList<String> accounts;
+
+	public AccountToggleAdapter(Activity activity, LinearLayout linearLayout) {
+		super();
+		this.activity = activity;
+		this.linearLayout = linearLayout;
+		accounts = new ArrayList<String>();
+	}
+	
+	@Override
+	public void onChange() {
+		String selected = AccountManager.getInstance().getSelectedAccount();
+		for (int index = 0; index < accounts.size(); index++) {
+//			final View view = linearLayout.getChildAt(index);
+//			final AccountViewHolder accountViewHolder = (AccountViewHolder) view.getTag();
+//			final String account = accounts.get(index);
+//			StatusMode statusMode = AccountManager.getInstance().getAccount(account).getDisplayStatusMode();
+//			if (contactsShowAccounts)
+//				accountViewHolder.statusMode.setBackgroundResource(R.drawable.account_background);
+//			else
+//				accountViewHolder.statusMode.setBackgroundResource(R.drawable.account_background);
+//			if (selected == null)
+//				accountViewHolder.disabled.setVisibility(View.GONE);
+//			else
+//				accountViewHolder.disabled.setVisibility(View.VISIBLE);
+//				accountViewHolder.statusMode.setImageLevel(statusMode.ordinal());
+//				accountViewHolder.avatar.setImageDrawable(AvatarManager.getInstance().getAccountAvatar(account));
+		}
+	}
+
+	public int getCount() {
+		return accounts.size();
+	}
+
+	public Object getItem(int position) {
+		return accounts.get(position);
+	}
+
+	/**
+	 * Get the data item associated with the specified view.
+	 * 
+	 * @param view
+	 *            direct child of linear layout or status_mode view in direct
+	 *            child.
+	 * @return The data for the specified view.
+	 */
+	public Object getItemForView(View view) {
+		if (view.getId() == R.id.status_mode)
+			view = (View) view.getParent();
+		for (int index = 0; index < linearLayout.getChildCount(); index++)
+			if (view == linearLayout.getChildAt(index))
+				return accounts;
+		return null;
+	}
+
+	private static class AccountViewHolder {
+		final ImageView statusMode;
+		final ImageView avatar;
+		final ImageView disabled;
+
+		public AccountViewHolder(View view) {
+			statusMode = (ImageView) view.findViewById(R.id.status_mode);
+			avatar = (ImageView) view.findViewById(R.id.avatar);
+			disabled = (ImageView) view.findViewById(R.id.disabled);
+		}
+	}
+
+}

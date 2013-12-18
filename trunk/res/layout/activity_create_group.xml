@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/createGroupRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/AbuStandard" >	
+    
+    <FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@drawable/title_top_bg_light" >
+		       
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="@string/CreateGroupTitle"
+             android:textColor="@color/TextPrimaryLight"
+             android:textSize="20sp" />
+		<FrameLayout
+		    android:id="@+id/createGroupBtnBack"
+		    android:layout_width="40dp"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="left"
+		    android:background="@drawable/btn_transparant_endog"
+		    android:clickable="true"
+		    android:padding="15dp" >
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:scaleType="fitXY"
+             android:src="@drawable/img_title_left_btn" />
+
+             </FrameLayout>
+             
+       </FrameLayout>
+    
+    <ImageView
+		android:layout_width="match_parent"
+		android:layout_height="10dp"
+		android:scaleType="fitXY"
+		android:src="@drawable/img_shadow_dramatisir" />
+    
+    <FrameLayout
+		        android:id="@+id/profileBlackCaptureFrom"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp"
+		        android:visibility="gone"
+		        android:background="@color/HitamAlphaMed">
+		
+		        <FrameLayout
+		            android:layout_width="300dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:background="@color/AbuStandard"
+		            android:padding="5dp">
+		
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:orientation="vertical"
+		                 >
+		
+		                <FrameLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="40dp"
+		                    android:background="@color/BiruNdogAsin" >
+		
+		                    <TextView
+		                        android:layout_width="wrap_content"
+		                        android:layout_height="wrap_content"
+		                        android:layout_gravity="left|center_vertical"
+		                        android:paddingLeft="10dp"
+		                        android:text="@string/formGlobalCaptureFrom"
+		                        android:textColor="@color/Putih"
+		                        android:textSize="20sp" />
+						<FrameLayout
+		                        android:id="@+id/profleBtnCloseSelect"
+		                        android:layout_width="40dp"
+		                        android:layout_height="40dp"
+		                        android:layout_gravity="right|center_vertical"
+		                        android:background="@drawable/btn_transparant_endogmed"
+		                        android:clickable="true"
+		                        android:padding="8dp" >
+		
+		                        <ImageView
+		                            android:layout_width="match_parent"
+		                            android:layout_height="match_parent"
+		                            android:scaleType="fitXY"
+		                            android:src="@drawable/img_close_btn" />
+		                    </FrameLayout>
+		                </FrameLayout>
+		
+		                <FrameLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="10dp" >
+		                </FrameLayout>
+		
+		                <FrameLayout
+		                    android:id="@+id/profleBtnCamera"
+		                    android:layout_width="120dp"
+		                    android:layout_height="35dp"
+		                    android:layout_gravity="center"
+		                    android:background="@drawable/btn_defaulta"
+		                    android:clickable="true" >
+		
+		                               <TextView
+		                                   android:layout_width="wrap_content"
+		                                   android:layout_height="wrap_content"
+		                                   android:layout_gravity="center"
+		                                   android:text="@string/formGlobalCamera"
+		                                   android:textColor="@color/Putih" />
+		                           </FrameLayout>
+		
+		                <FrameLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="5dp" >
+		                </FrameLayout>
+		
+		                           <FrameLayout
+		                               android:id="@+id/profileBtnGallery"
+		                               android:layout_width="120dp"
+		                               android:layout_height="35dp"
+		                               android:layout_gravity="center"
+		                               android:background="@drawable/btn_defaulta"
+		                               android:clickable="true" >
+		
+		                               <TextView
+		                                   android:layout_width="wrap_content"
+		                                   android:layout_height="wrap_content"
+		                                   android:layout_gravity="center"
+		                                   android:text="@string/formGlobalGallery"
+		                                   android:textColor="@color/Putih" />
+		                           </FrameLayout>
+		                           
+		                 <FrameLayout
+		                    android:layout_width="match_parent"
+		                    android:layout_height="5dp" >
+		                </FrameLayout>
+		
+		                           
+		                           <FrameLayout
+		                               android:layout_width="match_parent"
+		                               android:layout_height="10dp" >
+		
+		                </FrameLayout>
+		
+		            </LinearLayout>
+		
+		        </FrameLayout>
+		
+		    </FrameLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+		        
+	     <FrameLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:background="@color/AbuStandard" >
+	         
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="1dp" >
+			
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_vertical"
+			    android:orientation="horizontal"
+			    android:padding="1dp" >
+
+			    <FrameLayout
+                      android:layout_width="100dp"
+                      android:layout_height="100dp"
+                      android:layout_gravity="center"
+                      android:background="@drawable/btn_transparant_endog"
+                      android:clickable="true"
+                      android:padding="1dp" >
+                      <ImageView
+                          android:id="@+id/groupAvatarCreate"
+                          android:layout_width="80dp"
+                          android:layout_height="80dp"
+                          android:layout_gravity="center"
+                          android:scaleType="fitXY"
+                          android:src="@drawable/img_add_photo_group" />	
+                  	</FrameLayout>
+                  	<LinearLayout 
+                  	    android:layout_width="match_parent"
+                  	    android:layout_height="wrap_content"
+                  	    android:layout_weight="1"
+                  	    android:padding="1dp"
+                  	    android:orientation="vertical">
+
+                  	    <EditText
+                  	        android:id="@+id/createGroupEditName"
+                  	        android:layout_width="match_parent"
+                  	        android:layout_height="wrap_content"
+                  	        android:capitalize="none"
+                  	        android:ems="10"
+                  	        android:hint="@string/CreateGroupNameHint"
+                  	        android:inputType="textEmailAddress"
+                  	        android:singleLine="true" />
+
+                  	    <TextView
+                  	        android:layout_width="wrap_content"
+                  	        android:layout_height="wrap_content"
+                  	        android:layout_marginLeft="3dp"
+                  	        android:text="Group" />
+
+                  	</LinearLayout>
+                  	<LinearLayout 
+                  	    android:layout_width="wrap_content"
+                  	    android:layout_height="wrap_content"
+                  	    android:orientation="vertical"
+                  	    android:gravity="center_horizontal"
+                  	    android:padding="1dp">
+                  	    <FrameLayout
+                             android:id="@+id/createGroupBtnCreate"
+                             android:layout_width="wrap_content"
+                             android:layout_height="35dp"
+                             android:layout_gravity="center"
+                             android:background="@drawable/btn_defaultb"
+                             android:clickable="true" >
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="center"
+                                 android:text="@string/formGlobalCreate"
+                                 android:textColor="@color/Putih" />
+                         </FrameLayout>
+
+                         <TextView
+                             android:id="@+id/memberCounterTextView"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:paddingTop="2dp"
+                             android:text="(0/30)" />
+
+                  	</LinearLayout>
+                  	
+			</LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/AbuTuaLow" />
+
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:visibility="gone" >
+
+			    <CheckBox
+                      android:id="@+id/only_admin_can_invite_checkbox"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:padding="3dp"
+                      android:textSize="14sp" />
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Only Admin can Invite Others"/>
+			</LinearLayout>                
+	          <FrameLayout
+	              android:layout_width="match_parent"
+	              android:layout_height="1dp"
+	              android:background="@color/AbuTuaLow" />
+
+                     <TextView
+                         android:id="@+id/chatDateGroupSeparator"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Add Group Participants"
+                         android:padding="3dp"
+                         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                     <EditText
+                         android:id="@+id/searchTextGroupCreate"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="2dp"
+                         android:layout_marginRight="2dp"
+                         android:ems="10"
+                         android:hint="Type your Friend&apos;s name"
+                         android:inputType="textPersonName" />  
+
+                     <ListView
+		                android:id="@+id/createGroupFriendList"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:cacheColorHint="@android:color/transparent" />
+                    
+
+             </LinearLayout>	
+	      </FrameLayout>        
+    </ScrollView>
+</LinearLayout>

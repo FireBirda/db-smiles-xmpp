@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupParent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+         android:background="@color/barOther"
+         android:gravity="center_vertical|left"
+        >
+
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:src="@drawable/expander_indicator_dark" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/indicator"
+        android:layout_toRightOf="@id/indicator"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="name (0/0)"
+        android:textColor="@color/AbuTuaHigh"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dramatisir"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_shadow_dramatisir"
+        android:visibility="gone" />
+
+</LinearLayout>

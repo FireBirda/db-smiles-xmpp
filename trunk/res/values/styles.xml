@@ -1,0 +1,79 @@
+<resources>
+
+     <style name="BaseSmilesTheme" parent="android:Theme.Light.NoTitleBar">
+		<item name="android:windowBackground">@color/AbuStandard</item>
+        <item name="android:colorBackground">@color/AbuStandard</item>
+        <item name="android:textColorPrimary">@color/Hitam</item>
+        <item name="android:textColorPrimaryInverse">@color/Putih</item>
+    </style>
+    
+    <style name="SmilesTransparantDialogTheme" parent="@android:style/Theme.Dialog">
+		<item name="android:windowBackground">@color/Transparan</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:backgroundDimEnabled">true</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">wrap_content</item>
+	</style>
+    
+    <style name="CheckBoxSmiles" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <item name="android:minWidth">22dip</item>
+    <item name="android:maxWidth">22dip</item>
+    <item name="android:minHeight">22dip</item>
+    <item name="android:maxHeight">22dip</item>
+	</style>
+	
+     <style name="ProgressLubituSmall" parent="@android:style/Widget.ProgressBar">
+    <item name="android:indeterminateDrawable">@drawable/progres_lubitu</item>
+    <item name="android:minWidth">22dip</item>
+    <item name="android:maxWidth">22dip</item>
+    <item name="android:minHeight">22dip</item>
+    <item name="android:maxHeight">22dip</item>
+	</style>
+	
+    <style name="ProgressLubituMedium" parent="@android:style/Widget.ProgressBar">
+    <item name="android:indeterminateDrawable">@drawable/progres_lubitu</item>
+    <item name="android:minWidth">35dip</item>
+    <item name="android:maxWidth">35dip</item>
+    <item name="android:minHeight">35dip</item>
+    <item name="android:maxHeight">35dip</item>
+	</style>
+    
+    <style name="RadioButtonSmiles" parent="@android:style/Widget.CompoundButton.RadioButton">
+   <item name="android:button">@drawable/radio_smiles</item>
+    <item name="android:minWidth">40dp</item>
+    <item name="android:minHeight">40dp</item>
+	</style>
+
+    <style name="NotificationText">
+      <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    
+    
+    <style name="GlobalText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="GlobalText.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="GlobalText.Normal">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="GlobalText.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="GlobalText.XLarge">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="OccupantList" parent="@android:style/TextAppearance" />
+    <style name="OccupantList.Moderator">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="OccupantList.Participant">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="OccupantList.Visitor">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+</resources>

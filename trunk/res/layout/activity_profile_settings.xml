@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profileRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/formProfileTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard" >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+
+               <ScrollView
+                   android:id="@+id/profileScrollView"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:fillViewport="true"
+                   android:overScrollMode="never"
+                   android:scrollbars="none|vertical" >
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="vertical"
+                       android:padding="8dp" >
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="7dp" >
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:id="@+id/profilebtnSelectAvatar"
+                           android:layout_width="150dp"
+                           android:layout_height="150dp"
+                           android:layout_gravity="center"
+                           android:background="@drawable/btn_transparant_endog"
+                           android:clickable="true"
+                           android:padding="3dp" >
+
+                           <ImageView
+                               android:id="@+id/profileAvatar"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:scaleType="fitXY"
+                               android:src="@drawable/img_add_photo" />
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="10dp" >
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="7dp" >
+                       </FrameLayout>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/formGlobalDisplayStatusHint" />
+
+                       <EditText
+                           android:id="@+id/profileEditStatus"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/edittext_style"
+                           android:ems="10"
+                           android:hint="@string/formGlobalDisplayStatusHint" >
+
+                           <requestFocus />
+                       </EditText>
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/formGlobalDisplayNameHint" />
+
+                       <EditText
+                           android:id="@+id/profileEditName"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/edittext_style"
+                           android:ems="10"
+                           android:maxLines="1"
+                           android:hint="@string/formGlobalDisplayNameHint" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Gender" />
+
+                       <RadioGroup
+                           android:id="@+id/profileRadioSex"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="left"
+                           android:orientation="horizontal" >
+
+                           <RadioButton
+                               android:id="@+id/profileRadioOption1"
+                               style="@style/RadioButtonSmiles"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:checked="true"
+                               android:paddingRight="30dp"
+                               android:text="MALE" />
+
+                           <RadioButton
+                               android:id="@+id/profileRadioOption2"
+                               style="@style/RadioButtonSmiles"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="FEMALE" />
+                       </RadioGroup>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="10dp" >
+                       </FrameLayout>
+                   </LinearLayout>
+               </ScrollView>
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   >
+
+                   <FrameLayout
+                       android:id="@+id/profileBtnSave"
+                       android:layout_width="120dp"
+                       android:layout_height="35dp"
+                       android:layout_gravity="center"
+                       android:background="@drawable/btn_defaultb"
+                       android:clickable="true" >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center"
+                           android:text="@string/formGlobalSave"
+                           android:textColor="@color/Putih" />
+                   </FrameLayout>
+
+               </FrameLayout>
+
+           </LinearLayout>
+
+           
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow_dramatisir" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/profileBlackCaptureFrom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/HitamAlphaMed"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/AbuStandard"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/BiruNdogAsin" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/formGlobalCaptureFrom"
+                        android:textColor="@color/Putih"
+                        android:textSize="20sp" />
+<FrameLayout
+                        android:id="@+id/profleBtnCloseSelect"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/btn_transparant_endogmed"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close_btn" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" >
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/profleBtnCamera"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_defaulta"
+                    android:clickable="true" >
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:text="@string/formGlobalCamera"
+                                   android:textColor="@color/Putih" />
+                           </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" >
+                </FrameLayout>
+
+                           <FrameLayout
+                               android:id="@+id/profileBtnGallery"
+                               android:layout_width="120dp"
+                               android:layout_height="35dp"
+                               android:layout_gravity="center"
+                               android:background="@drawable/btn_defaulta"
+                               android:clickable="true" >
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:text="@string/formGlobalGallery"
+                                   android:textColor="@color/Putih" />
+                           </FrameLayout>
+                           
+                 <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" >
+                </FrameLayout>
+
+                           <FrameLayout
+                               android:id="@+id/profileBtnClearAvatar"
+                               android:layout_width="120dp"
+                               android:layout_height="35dp"
+                               android:layout_gravity="center"
+                               android:background="@drawable/btn_defaulta"
+                               android:clickable="true" >
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:text="@string/formGlobalClear"
+                                   android:textColor="@color/Putih" />
+                           </FrameLayout>
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="10dp" >
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

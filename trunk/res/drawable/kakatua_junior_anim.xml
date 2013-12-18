@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/kakatua_junior_anim" android:oneshot="false" >
+        <item android:drawable="@drawable/kakatua_junior01" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior02" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior03" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior04" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior05" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior06" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior07" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior08" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior09" android:duration="30" />
+        <item android:drawable="@drawable/kakatua_junior10" android:duration="30" />
+</animation-list> 

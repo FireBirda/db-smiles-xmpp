@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/registerRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/formRegisterTitle"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/registerContainerNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="visible" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:overScrollMode="never"
+                android:scrollbars="none|vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/img_bg_frame_putih"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="25dp"
+                            android:text="@string/formRegisterPleaseComplete"
+                            android:textSize="18sp" />
+                        
+                        <Spinner
+				            android:id="@+id/country_name_spinner"
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp" >
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:minWidth="200dp" >
+
+                            <EditText
+                                android:id="@+id/registerEditCountry"
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_style"
+                                android:ems="10"
+                                android:gravity="center_vertical"
+                                android:hint="@string/formGlobalCountryCode"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:maxLength="3" >
+
+                            </EditText>
+
+                            <FrameLayout
+                                android:layout_width="8dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+                            </FrameLayout>
+
+                            <EditText
+                                android:id="@+id/registerEditPhone"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/edittext_style"
+                                android:ems="10"
+                                android:gravity="left|center_vertical"
+                                android:hint="@string/formGlobalPhoneNumberHint"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:maxLength="13" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/registerBtnShowTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_defaulta"
+                            android:clickable="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:text="@string/formRegisterbtnShowTermsPrivacy"
+                                android:textColor="@color/Putih" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" >
+                        </FrameLayout>
+
+                        <CheckBox
+                            android:id="@+id/registerCheckTerms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:button="@drawable/chkbox_smiles"
+                            android:checked="false"
+                            android:text="@string/formRegisterTxtAgree"
+                            android:textColor="@color/TextTertiaryLight" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" >
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/loginWarningMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/MerahTua"
+                            android:textSize="12sp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/AbuTuaVeryLow" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="20dp" >
+
+                            <FrameLayout
+                                android:id="@+id/registerBtnNext"
+                                android:layout_width="120dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btn_defaultb"
+                                android:clickable="true" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/formGlobalNext"
+                                    android:textColor="@color/Putih" />
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shadow_dramatisir" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/registerContainerBlackTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/HitamAlphaMed"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/registerContainerTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/img_bg_frame_putih" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/BiruNdogAsin"
+                    android:padding="2dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="@string/formRegisterShowTermsPrivacy"
+                        android:textColor="@color/Putih"
+                        android:textSize="18sp" />
+
+                    <FrameLayout
+                        android:id="@+id/registerBtnHideTerms"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/btn_transparant_endogmed"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close_btn" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp" >
+
+                    <WebView
+                        android:id="@+id/registerWebTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:minHeight="200dp" />
+
+                    <ImageView
+                        android:id="@+id/registerLoadingTerms"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/kakatua_junior_anim" />
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/registerContainerBlackVeri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/HitamAlphaHigh"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minWidth="300dp" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="3dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_bg_frame_putih"
+                    android:minHeight="300dp" >
+                </FrameLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp" >
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@color/BiruNdogAsin" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="60dp"
+                            android:paddingRight="60dp"
+                            android:paddingTop="4dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:shadowColor="@color/Hitam"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="1"
+                                android:text="@string/formRegisterVerificationCodeTitle"
+                                android:textColor="@color/Putih"
+                                android:textSize="20sp" />
+                        </FrameLayout>
+
+                        <ProgressBar
+                      		android:id="@+id/registerVerificationLoading"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:paddingRight="15dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:paddingLeft="10dp" >
+
+                        <ImageView
+                            android:id="@+id/registerVerificationImgAnim"
+                            android:layout_width="34dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/kakatua_kedip_anim" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <EditText
+                            android:id="@+id/registerVerificationEditNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_style"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:maxLength="8" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/formRegisterVerificationCodeHelp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/AbuTuaVeryLow" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" >
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center" >
+
+                                <FrameLayout
+                                    android:id="@+id/registerVerificationBtnResend"
+                                    android:layout_width="120dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/btn_defaulta"
+                                    android:clickable="true" >
+
+                                    <TextView
+                                        android:id="@+id/registerVerificationBtnResendTxt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/formGlobalResend"
+                                        android:textColor="@color/Putih" />
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="10dp"
+                                    android:layout_height="match_parent" >
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:id="@+id/registerVerificationBtnConfirm"
+                                    android:layout_width="120dp"
+                                    android:layout_height="35dp"
+                                    android:background="@drawable/btn_defaultb"
+                                    android:clickable="true" >
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:text="@string/formGlobalConfirm"
+                                        android:textColor="@color/Putih" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/registerContainerBlackID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/HitamAlphaHigh"
+        android:visibility="gone" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:overScrollMode="never"
+            android:scrollbars="none|vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_bg_frame_putih"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/formAccountTitle"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+                    <EditText
+                        android:id="@+id/registerIDEditID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_style"
+                        android:ems="10"
+                        android:hint="@string/formGlobalSmilesIDHint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:maxLength="20" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/registerIDEditEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_style"
+                        android:ems="10"
+                        android:hint="@string/formGlobalEmailHint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                         android:maxLines="1"
+                        android:maxLength="100" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/registerIDEditFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_style"
+                        android:ems="10"
+                        android:hint="@string/formGlobalFullNameHint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPersonName"
+                        android:maxLength="100"
+                        android:maxLines="1" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <RadioGroup
+                        android:id="@+id/registerIDRadioSex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/registerIDRadioOption1"
+                            style="@style/RadioButtonSmiles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                             android:paddingRight="30dp"
+                            android:text="MALE" />
+
+                        <RadioButton
+                            android:id="@+id/registerIDRadioOption2"
+                            style="@style/RadioButtonSmiles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FEMALE" />
+
+                    </RadioGroup>
+<FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/registerIDEditPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_style"
+                        android:ems="10"
+                        android:hint="@string/formGlobalPasswordHint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:maxLength="50" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/registerIDEditPasswordConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_style"
+                        android:ems="10"
+                        android:hint="@string/formGlobalConfirmPasswordHint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:maxLength="50" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp" >
+                    </FrameLayout>
+
+<CheckBox
+    android:id="@+id/registerIDCheckShowPassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:button="@drawable/chkbox_smiles"
+    android:checked="false"
+    android:text="@string/formGlobalShowHidePassword"
+    android:textColor="@color/TextTertiaryLight" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" >
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/registerIDWarningMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/MerahTua"
+                        android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" >
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/AbuTuaVeryLow" >
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" >
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="20dp" >
+
+                        <FrameLayout
+                            android:id="@+id/registerIDBtnDone"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_defaultb"
+                            android:clickable="true" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/formGlobalDone"
+                                android:textColor="@color/Putih" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</FrameLayout>

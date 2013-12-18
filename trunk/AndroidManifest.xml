@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digitalbuana.smiles"
+    android:versionCode="45"
+    android:versionName="2.2.8"
+    android:installLocation="auto">
+    
+    <compatible-screens
+   	    android:resizeable="false"
+   	    android:smallScreens="true"
+   	    android:normalScreens="true"
+   	    android:largeScreens="true"
+   	    android:xlargeScreens="true"
+   	    android:anyDensity="true" >
+        <!-- all small size screens -->
+        <screen android:screenSize="small" android:screenDensity="ldpi" />
+        <screen android:screenSize="small" android:screenDensity="mdpi" />
+        <screen android:screenSize="small" android:screenDensity="hdpi" />
+        <screen android:screenSize="small" android:screenDensity="xhdpi" />
+        <screen android:screenSize="small" android:screenDensity="213" />
+        <screen android:screenSize="small" android:screenDensity="480" />
+        <!-- all normal size screens -->
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+        <screen android:screenSize="normal" android:screenDensity="213" />
+        <screen android:screenSize="normal" android:screenDensity="480" />
+        <!-- all normal size screens -->
+        <screen android:screenSize="large" android:screenDensity="ldpi" />
+        <screen android:screenSize="large" android:screenDensity="mdpi" />
+        <screen android:screenSize="large" android:screenDensity="hdpi" />
+        <screen android:screenSize="large" android:screenDensity="xhdpi" />
+        <screen android:screenSize="large" android:screenDensity="213" />
+        <screen android:screenSize="large" android:screenDensity="480" />
+        <!-- all normal size screens -->
+        <screen android:screenSize="xlarge" android:screenDensity="ldpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="213" />
+        <screen android:screenSize="xlarge" android:screenDensity="480" />
+    </compatible-screens>
+    
+    <supports-screens 
+    android:largeScreens="true" 
+    android:resizeable="true" 
+    android:anyDensity="true" 
+    android:xlargeScreens="true" 
+    android:normalScreens="true" 
+    android:smallScreens="true"/>
+    
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SIGNAL_PERSISTENT_PROCESSES"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <permission
+        android:name="com.digitalbuana.smiles.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.digitalbuana.smiles.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    
+    <application
+        android:label="@string/application_name"
+        android:icon="@drawable/ic_launcher"
+        android:name="com.digitalbuana.smiles.data.Application"
+        >
+
+        <activity
+            android:label="@string/application_name"
+            android:name="com.digitalbuana.smiles.activity.HomeActivity"
+            android:theme="@style/Theme.Light"
+            android:launchMode="singleTop"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="xmpp" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="imto" />
+                <data android:host="jabber" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="imto" />
+                <data android:host="gtalk" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.digitalbuana.smiles.activity.SplashActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity
+            android:label="@string/about_viewer"
+            android:name="com.digitalbuana.smiles.ui.AboutViewer"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:label="@string/preference_accounts"
+            android:name="com.digitalbuana.smiles.ui.AccountList"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:label="@string/account_editor"
+            android:name="com.digitalbuana.smiles.ui.AccountEditor"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:label="@string/chat_list"
+            android:name="com.digitalbuana.smiles.ui.ChatList"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:label="@string/occupant_list"
+            android:name="com.digitalbuana.smiles.ui.OccupantList"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="user" android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize"/>
+        <activity
+            android:label="@string/chat_viewer"
+            android:name="com.digitalbuana.smiles.activity.ChatViewActivity"
+            android:theme="@style/Theme.Light"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTop"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.digitalbuana.smiles.activity.StickerSelectActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            >
+        </activity>
+        <activity
+            android:name="com.digitalbuana.smiles.activity.UploadFileActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            >
+        </activity>
+        
+        
+        <activity
+            android:label="@string/contact_editor"
+            android:name="com.digitalbuana.smiles.ui.ContactEditor"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:label="@string/contact_add"
+            android:name="com.digitalbuana.smiles.ui.ContactAdd"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.activity.LoginActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.activity.RegisterActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.activity.BroadcastMesssageActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.activity.AddFriendsActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+         <activity
+            android:name="com.digitalbuana.smiles.activity.CreateGroupActivity"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize"
+            android:theme="@style/Theme.Light"/>
+         <activity
+            android:name="com.digitalbuana.smiles.activity.FriendsRequestActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+          <activity
+            android:name="com.digitalbuana.smiles.activity.BlockedFriendsActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+          <activity
+            android:name="com.digitalbuana.smiles.activity.FriendsUpdateActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            /> 
+             <activity
+            android:name="com.digitalbuana.smiles.activity.VisitorActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|orientation|screenLayout"
+            />
+          <activity
+            android:name="com.digitalbuana.smiles.activity.NotificationActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+           <activity
+            android:name="com.digitalbuana.smiles.activity.RoomsActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+            <activity
+            android:name="com.digitalbuana.smiles.activity.SettingsActivity"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="user"
+            android:configChanges="orientation|keyboardHidden"
+            />
+            
+        <activity
+        android:name="com.digitalbuana.smiles.activity.ProfileSettingsActivity"
+        android:theme="@style/Theme.Light"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+        />
+            
+            
+        <activity
+            android:label="@string/account_oauth"
+            android:name="com.digitalbuana.smiles.ui.OAuthActivity"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:label="@string/muc_add"
+            android:name="com.digitalbuana.smiles.ui.MUCEditor"
+            android:theme="@style/Theme.Light"
+            />
+
+        <activity
+            android:label="@string/preference_editor"
+            android:name="com.digitalbuana.smiles.ui.PreferenceEditor"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:label="@string/chat_settings"
+            android:name="com.digitalbuana.smiles.ui.ChatEditor"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:label="@string/contact_viewer"
+            android:name="com.digitalbuana.smiles.ui.ContactViewer"
+            android:theme="@style/Theme.Light"
+            android:icon="@drawable/ic_information"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="@string/contact_viewer_mime_type" />
+                <data android:scheme="content" />
+                <data android:host="com.android.contacts" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:label="@string/contact_viewer"
+            android:name="com.digitalbuana.smiles.activity.ProfileDetailActivity"
+            android:theme="@style/Theme.Light"
+            android:icon="@drawable/ic_information"
+            android:screenOrientation="user"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="@string/contact_viewer_mime_type" />
+                <data android:scheme="content" />
+                <data android:host="com.android.contacts" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="com.digitalbuana.smiles.ui.FingerprintViewer"
+            android:label="@string/otr_verify_fingerprint"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.QuestionViewer"
+            android:label="@string/otr_verify_fingerprint"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.OpenSourceViewer"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.CertificateConfirmation"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.PasswordRequest"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.ArchiveRequest"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.PhraseList"
+            android:theme="@style/Theme.Light"
+            android:label="@string/events_phrases_title"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.PhraseEditor"
+            android:theme="@style/Theme.Light"
+            />
+        <activity
+            android:name="com.digitalbuana.smiles.ui.ReconnectionActivity"
+            />
+        <activity
+            android:label="ClearNotifications"
+            android:name="com.digitalbuana.smiles.ui.ClearNotifications"
+            android:taskAffinity=""
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:stateNotNeeded="true"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay"
+            />
+        
+        
+        <activity android:name="com.google.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:screenOrientation="user"></activity>
+       
+        
+        <!-- <service
+            android:name="com.digitalbuana.smiles.service.SyncAdapterService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter"
+                />
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts_structure"
+                />
+        </service> -->
+        <!-- <service
+            android:name="com.digitalbuana.smiles.service.AccountAuthenticatorService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service> -->
+        <receiver
+            android:name="com.digitalbuana.smiles.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.digitalbuana.smiles.receiver.ComposingPausedReceiver" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.digitalbuana.smiles" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps" />
+        <service android:name="com.digitalbuana.smiles.service.SmilesService" android:label="MessageService" android:enabled="true"/>
+        <service android:name=".GCMIntentService" android:enabled="true" android:label="GCMService"/>
+        <activity android:name=".activity.ChatViewer"></activity>
+        <activity android:name=".awan.activity.Charge" android:configChanges="navigation|orientation|screenSize"></activity>
+        <activity android:name=".awan.activity.GroupInviteActivity" android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:screenOrientation="user" android:theme="@style/Theme.Light"></activity>
+        <activity android:name=".awan.activity.InviteFrom" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" android:theme="@style/Theme.Light" android:screenOrientation="user"></activity>
+        <activity android:name=".awan.activity.PhotoFromWebActivity" android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:theme="@style/Theme.Light" android:screenOrientation="user"></activity>
+        <activity android:name=".awan.activity.GoogleMapsActivity" android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:theme="@style/Theme.Light" android:screenOrientation="user"></activity>
+        <activity android:name=".activity.CustomeSoundActivity" android:configChanges="keyboardHidden|navigation|orientation|screenLayout|screenSize" android:theme="@style/Theme.Light" android:screenOrientation="user"></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize" android:name=".activity.SearchFriendsActivity" android:screenOrientation="user" android:theme="@style/Theme.Light"></activity>
+        </application>
+    
+</manifest> 

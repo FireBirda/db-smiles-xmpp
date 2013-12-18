@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adapterAddFriendsRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_transparant_endog"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="3dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/adapterAddFriendsAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical"
+            android:src="@drawable/img_default_avatar" />
+
+        <FrameLayout
+            android:id="@+id/adapterAddFriendsbtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_transparant_endog"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/img_add_item" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/adapterAddFriendsName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/adapterAddFriendsAvatar"
+            android:layout_toLeftOf="@+id/adapterAddFriendsbtn"
+            android:layout_toRightOf="@+id/adapterAddFriendsAvatar"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/TextPrimaryLight"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/AbuTuaVeryLow" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addFriendsRootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/AbuStandard" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/title_top_bg_light" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/addFriendsTitle1"
+                android:textColor="@color/TextPrimaryLight"
+                android:textSize="20sp" />
+<FrameLayout
+				    android:id="@+id/addFriendsBtnBack"
+				    android:layout_width="40dp"
+				    android:layout_height="match_parent"
+				    android:layout_gravity="left"
+				    android:background="@drawable/btn_transparant_endog"
+				    android:clickable="true"
+				    android:padding="15dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_title_left_btn" />
+
+                </FrameLayout>
+
+        </FrameLayout>
+
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/AbuStandard" >
+
+           <ScrollView
+               android:id="@+id/loginScrollView"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:fillViewport="true"
+               android:overScrollMode="never"
+               android:scrollbars="none|vertical" >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="8dp" >
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/img_bg_frame_putih"
+                       android:orientation="vertical" >
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:background="@drawable/btn_transparant_endog"
+                           android:clickable="true"
+                           android:padding="5dp"
+                           android:focusable="true" 
+        				   android:focusableInTouchMode="true"
+                           android:id="@+id/inviteToContactButton" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="left|center_vertical"
+                               android:paddingBottom="3dp"
+                               android:paddingLeft="5dp"
+                               android:text="@string/addFriendsItem1"
+                               android:textColor="@color/TextTertiaryLight"
+                               android:textSize="18sp" />
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="2dp"
+                               android:layout_gravity="bottom"
+                               android:background="@color/AbuTuaVeryLow" >
+                           </FrameLayout>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="25dp"
+                               android:layout_gravity="right|center_vertical"
+                               android:paddingBottom="3dp"
+                               android:src="@drawable/img_title_right_btn" />
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:background="@drawable/btn_transparant_endog"
+                           android:clickable="true"
+                           android:padding="5dp"
+                           android:id="@+id/inviteToEmailButton" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="left|center_vertical"
+                               android:paddingBottom="3dp"
+                               android:paddingLeft="5dp"
+                               android:text="@string/addFriendsItem2"
+                               android:textColor="@color/TextTertiaryLight"
+                               android:textSize="18sp" />
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="2dp"
+                               android:layout_gravity="bottom"
+                               android:background="@color/AbuTuaVeryLow" >
+                           </FrameLayout>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="25dp"
+                               android:layout_gravity="right|center_vertical"
+                               android:paddingBottom="3dp"
+                               android:src="@drawable/img_title_right_btn" />
+                       </FrameLayout>
+						
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:background="@drawable/btn_transparant_endog"
+                           android:clickable="true"
+                           android:padding="5dp"
+                           android:id="@+id/SearchFromServerButton" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="left|center_vertical"
+                               android:paddingBottom="3dp"
+                               android:paddingLeft="5dp"
+                               android:text="@string/addFriendsItem4"
+                               android:textColor="@color/TextTertiaryLight"
+                               android:textSize="18sp" />
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="2dp"
+                               android:layout_gravity="bottom"
+                               android:background="@color/AbuTuaVeryLow" >
+                           </FrameLayout>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="25dp"
+                               android:layout_gravity="right|center_vertical"
+                               android:paddingBottom="3dp"
+                               android:src="@drawable/img_title_right_btn" />
+                       </FrameLayout>
+                       
+                   </LinearLayout>
+
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="10dp" >
+                   </FrameLayout>
+
+                   <LinearLayout
+                       android:visibility="gone"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/img_bg_frame_putih"
+                       android:orientation="vertical" >
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:visibility="gone"
+                           android:background="@color/BiruNdogAsin" >
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="left|center_vertical"
+                               android:paddingLeft="45dp"
+                               android:text="@string/addFriendsTitle2"
+                               android:textColor="@color/Putih"
+                               android:textSize="20sp" />
+
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:paddingLeft="8dp"
+                               android:paddingTop="3dp"
+                               >
+
+                               <ImageView
+                                   android:id="@+id/kakatuaKuimgProgress"
+                                   android:layout_width="32dp"
+                                   android:layout_height="match_parent"
+                                   android:background="@drawable/kakatua_kedip_anim" />
+
+                           </FrameLayout>
+
+                           <ProgressBar
+                               android:id="@+id/addFriendsProgressSearch"
+                               style="@style/ProgressLubituSmall"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="right|center_vertical"
+                               android:paddingRight="10dp"
+                               android:visibility="gone"
+                               android:background="@drawable/progres_bg"
+                               />
+
+
+                       </FrameLayout>
+
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content" >
+
+                          <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:padding="5dp" >
+
+                               <FrameLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="60dp" >
+
+                                   <FrameLayout
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="left|center_vertical"
+                                       android:paddingRight="70dp" >
+
+                                       <EditText
+                                           android:id="@+id/addFriendsEditKeyword"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="wrap_content"
+                                           android:layout_gravity="left|center_vertical"
+                                           android:background="@drawable/edittext_style"
+                                           android:hint="@string/formGlobalLoginHint"
+                                           android:imeOptions="actionSearch"
+                                           android:inputType="textEmailAddress"
+                                           android:nextFocusLeft="@id/addFriendsEditKeyword"
+            								android:nextFocusUp="@id/addFriendsEditKeyword"
+                                           android:maxLines="1"
+                                           />
+
+                                   </FrameLayout>
+
+                                   <FrameLayout
+                                       android:layout_width="70dp"
+                                       android:layout_height="match_parent"
+                                       android:layout_gravity="right|center_vertical"
+                                       android:padding="5dp" >
+
+                                       <FrameLayout
+                                           android:id="@+id/addFriendsBtnSearch"
+                                           android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:background="@drawable/btn_defaultb"
+                                           android:clickable="true" >
+
+                                           <ImageView
+                                               android:layout_width="wrap_content"
+                                               android:layout_height="wrap_content"
+                                               android:layout_gravity="center"
+                                               android:src="@drawable/img_ic_search" />
+
+                                       </FrameLayout>
+
+                                   </FrameLayout>
+
+                               </FrameLayout>
+								
+                              <!--  <com.digitalbuana.smiles.ui.widget.GridViewKu
+                                   android:id="@+id/addFriendsGridView"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:listSelector="@drawable/btn_transparant_endog"
+                                   android:minHeight="200dp"
+                                   android:numColumns="1" /> -->
+								
+
+                           </LinearLayout>
+
+    			<ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_shadow_dramatisir" />
+					
+                       </FrameLayout>
+
+                   </LinearLayout>
+
+                   <TextView
+                       android:id="@+id/friendRecommenTitle"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/BiruNdogAsin"
+                       android:padding="4dp"
+                       android:singleLine="false"
+                       android:text="Friend Recommendation"
+                       android:textColor="@color/Putih" />
+                   
+                    <com.digitalbuana.smiles.ui.widget.GridViewKu
+                                   android:id="@+id/addFriendsGridView"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:listSelector="@drawable/btn_transparant_endog"
+                                   android:minHeight="200dp"
+                                   android:numColumns="1" />
+
+               </LinearLayout>
+
+           </ScrollView>
+
+           
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_shadow_dramatisir" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
