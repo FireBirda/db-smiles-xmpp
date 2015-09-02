@@ -1,0 +1,2 @@
+SMILES is a cross-platform instant messaging application for smartphones. Not only give additional features to basic messaging like send each other images, video, and audio media messages, SMILES offers multimedia features like video-audio streaming and also SMILES provides store that allow users to download virtual items.
+Currently, SMILES available on Android platform and will be expanded soon on Blackberry, Symbian, iOS, and Windows Phone.
